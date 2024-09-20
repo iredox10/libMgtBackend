@@ -10,7 +10,10 @@ app.use(express.urlencoded({extended:false}))
 app.use(cors('*'))
 app.use(route)
 
-const mongooseConnect = await mongoose.connect('mongodb://localhost/libMgt')
+const mongooseConnect = await mongoose.connect('mongodb+srv://idreesadam200:iredox@cluster0.jcxb8on.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
+
+
+// const mongooseConnect = await mongoose.connect('mongodb://localhost/libMgt')
 
 
 app.listen(4000, () => console.log('connected to saver'))
